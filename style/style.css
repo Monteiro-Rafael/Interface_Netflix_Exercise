@@ -1,0 +1,127 @@
+:root{
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elementos Base*/
+
+body{
+  background:var(--preto);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+header .logo{
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  margin-left: 5px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+
+
+}
+
+header nav a:hover{
+  color: #fff;
+}
+
+/*Filme principal*/
+
+.filme-principal{
+  font-size: 16px;
+  /*linear-gradient cria uma camada entre a background-image e o texto*/
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/ALIEN O OITAVO PASSAGEIRO.jpg');
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.container{
+  margin: 0 3vw;
+}
+
+.filme-principal .container{
+  width: 80vw;
+}
+
+.filme-principal .descricao{
+  margin-top: 0.5em;
+  margin-bottom: 2.5em;
+}
+
+.titulo{
+  font-size: 2em;
+}
+
+.botoes{
+  width: 100vw;
+}
+
+.botao{
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 1.3em 2.6em;
+  margin-right: 1.5em;
+  font-size: 0.8em;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  cursor: pointer;
+  transition: .3s ease all;
+
+}
+
+.botao:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+.botao i{
+  margin-right: 2em;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+.item:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+  color: white;
+  transition: .5s ease all;
+}
+
+.carrosel-filmes{
+  margin: 0 3vw;
+}
+
+.item{
+  cursor: pointer;
+  padding: 0.2em;
+
+}
